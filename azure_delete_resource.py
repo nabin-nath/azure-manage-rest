@@ -1,12 +1,13 @@
 # Import credential and management objects.
-from logging import error
 from azure.identity import AzureCliCredential
 from azure.mgmt.resource import ResourceManagementClient
-from azure.mgmt.network import NetworkManagementClient
-from azure.mgmt.compute import ComputeManagementClient
+from dotenv import load_dotenv
+
 import os
 
-print(f"Provisioning a virtual machine in Azure using Python.")
+load_dotenv()
+
+print(f"Deleting a virtual machine in Azure using Python.")
 
 # Acquire credential object using CLI-based authentication.
 credential = AzureCliCredential()
